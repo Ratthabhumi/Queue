@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Management System</title>
+    <link rel="stylesheet" href="styles.css"> <!-- เชื่อมโยงไฟล์ CSS ของคุณ -->
+    <link rel="stylesheet" href="css/toastr.min.css"> <!-- เชื่อมโยงไฟล์ Toastr CSS -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- เพิ่มไอคอนเว็บ -->
+</head>
+<body>
+    <header>
+        <h1>Queue Management System</h1>
+    </header>
+    <main>
+        <form id="queueForm">
+            <label for="name" class="tooltip">Name:
+                <span class="tooltiptext">Please enter your name</span>
+            </label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Join Queue</button>
+        </form>
+        <section id="queueList">
+            <h2>Queue List</h2>
+            <input type="text" id="searchInput" placeholder="Search queue..."> <!-- ช่องค้นหา -->
+            <ul id="queueItems"></ul>
+        </section>
+    </main>
+    <script src="js/jquery.min.js"></script> <!-- เพิ่ม jQuery -->
+    <script src="js/toastr.min.js"></script> <!-- เชื่อมโยงไฟล์ Toastr JS -->
+    <script src="scripts.js"></script> <!-- เชื่อมโยงไฟล์ JavaScript ของคุณ -->
+</body>
+</html>
